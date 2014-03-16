@@ -1,6 +1,7 @@
 Ed Podojil, Data Scentist <a href="https://www.twitter.com/homejoy">@Homejoy</a>
 
 Twitter: <a href="https://www.twitter.com/podopie">@podopie
+
 Website: <a href="http://www.heypodo.com"> linky</a>
 
 I added a bunch of great reading and viewing on the lab page!
