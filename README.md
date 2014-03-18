@@ -12,6 +12,6 @@ Each class is comprised of
 * Review and Homework Q&A (20 minutes)
 * [Current Event Presentation](current_event_presentation) (5 minutes)
 * New Topic Presentation and Discussion (60 minutes)
-* [Pair Coding](pair_coding) (60 minutes)
+* [Pair Learning](pair_learning) (60 minutes)
 * Wrap Up (5 minutes)
 * Office Hours (30 minutes)
