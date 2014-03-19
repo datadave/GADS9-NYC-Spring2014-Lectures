@@ -14,7 +14,6 @@ First we'll notice that the data we collected was in a JSON file format. Most AP
 (xml). We can view the data quickly using `less`, but something tells us immediately it won't be very useful!
 ```sh
 less malaysia_articles.json
-
 ```
 
 Fortunately, python has a built in pretty-printer that we can use to make this file a bit more human readable. We can use `cat` as a form of printing the article out, and the pipe `|` to take whatever we printed and use in the next command.

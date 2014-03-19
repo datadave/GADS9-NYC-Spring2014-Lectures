@@ -3,7 +3,9 @@
 
 `Homebrew` is a mac installer for packages/libraries/etc that works alongside Apple's installers. We need it for git. Install oneliner:
 
-    ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+```sh
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+```
 
 ## Installing `git`
 
@@ -15,7 +17,9 @@
 
 Once you've setup git and github, clone the class repository. We're using it for lab assignments and project collection.
 
-    cd ~/; git clone git@github.com:datadave/GADS9-NYC-Spring2014.git
+```sh
+cd ~/; git clone git@github.com:datadave/GADS9-NYC-Spring2014.git
+```
 
 ## `python`
 
@@ -23,19 +27,25 @@ The easiest install is Anaconda's Python. <a href="https://store.continuum.io/cs
 
 **Note to Engineers:** If you prefer to not have anaconda's distribution as your primary python, comment out the `PATH` line for anaconda in `~/.bash_profile` and add an alias for anaconda's python, ipython and conda package handler:
 
-    alias apython="/Users/edjoy/anaconda/bin/python"
-    alias ipython="/Users/edjoy/anaconda/bin/ipython"
-    alias conda="/Users/edjoy/anaconda/bin/conda"
+```sh
+alias apython="/Users/edjoy/anaconda/bin/python"
+alias ipython="/Users/edjoy/anaconda/bin/ipython"
+alias conda="/Users/edjoy/anaconda/bin/conda"
+```
 
 For visualizations we'll primarily use matplotlib and yhat's version of ggplot for python:
 
-    conda install -c https://conda.binstar.org/public ggplot
+```sh
+conda install -c https://conda.binstar.org/public ggplot
+```
 
-## Lab Submissions (1)
+## Lab Submissions
 
 in `GADS9-NYC-Spring2014/lab_submissions/lab01`, make a directory with your first initial/full last name.
 
-    DIR='flastname'; cd ~/GADS9-NYC-Spring2014/lab_submissions/lab01; mkdir $DIR; open $DIR
+```sh
+DIR='flastname'; cd ~/GADS9-NYC-Spring2014/lab_submissions/lab01; mkdir $DIR; open $DIR
+```
 
 With a text editor, create and save a markdown file with the following content:
 
@@ -46,9 +56,11 @@ With a text editor, create and save a markdown file with the following content:
 
 create a branch of the repository with a unique name, and then commit to that repo
 
-    git checkout -b some_unique_name
-    git add .
-    git commit -m 'my first git commit!
+```sh
+git checkout -b some_unique_name
+git add .
+git commit -m 'my first git commit!'
+```
 
 Add a pull request. This is the actual submission of your work. You can do this on github by finding your branch and clicking "Create pull request." Developers, feel free to use some command line tool for this if you prefer it.
 
