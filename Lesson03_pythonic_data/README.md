@@ -3,6 +3,16 @@
 ## DRAFT
 * * * 
 
+## Outline Recommended by Ed:
+[Alyssa Frazee Page](http://alyssafrazee.com/introducing-R.html)
+* Console and SCript
+* Comments
+* Graphics(?)
+* Help
+* Numpy (Vectors and Matrices)
+* Data Frames
+* EDA
+
 We will be covering:
 
 * An overview of Python's benefits for the data scientist
