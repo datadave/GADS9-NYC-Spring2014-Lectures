@@ -1,3 +1,4 @@
+
 # Lesson 3: Pythonic Data (or Datonic Python)
 * * * 
 ## DRAFT
