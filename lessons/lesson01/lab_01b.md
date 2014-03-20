@@ -6,7 +6,7 @@
 ```sh
 mkdir nytimes_data
 cd nytimes_data
-curl -s 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=malaysia&page=0&api-key=e5556d43840e2fff528041f204435467:0:53173894' > malaysia_articles.json
+curl -s 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=malaysia&page=0&api-key=$KEYVALUE' > malaysia_articles.json
 ```
 
 ### Observing and getting around the data
