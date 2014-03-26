@@ -9,6 +9,7 @@ Welcome to the course repository for the Spring 2014 Data Science course at Gene
 
 ### Class Format
 Each class is comprised of some approximation of:
+
 * Review and Homework Q&A (20 minutes)
 * [Current Event Presentation](about_the_course/current_event_presentation) (5 minutes)
 * New Topic Presentation and Discussion (60 minutes)
