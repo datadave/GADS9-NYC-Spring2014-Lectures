@@ -1,15 +1,11 @@
 Data Science: Course Home Page
 ==============================
-Welcome to the course repository for the Spring 2014 Data Science course at General Assembly, NYC.
+_Course repository for the Spring 2014 Data Science course at General Assembly, NYC._
 
-## TOC
-* [Course Materials](#course-materials)
-* [Course Syllabus](#course-syllabus)
-* [Class Format](#class-format)
-
-## Materials
-* [Lessons](lessons)
-* [Lab Submissions](lab_submissions)
+Resource | Description  
+---- | -----------
+[Course Wiki](https://github.com/datadave/GADS9-NYC-Spring2014/wiki) | Collaborative wiki featuring discussions, events, and more. 
+[Lessons](lessons) | Slides and pair learning materials for each class - posted a week in advance
 
 
 ## Course Syllabus
