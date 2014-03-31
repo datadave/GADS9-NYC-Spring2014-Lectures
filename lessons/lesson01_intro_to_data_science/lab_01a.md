@@ -47,9 +47,9 @@ in `GADS9-NYC-Spring2014/lab_submissions/lab01`, make a directory with your firs
 DIR='flastname'; cd ~/GADS9-NYC-Spring2014/lab_submissions/lab01; mkdir $DIR; open $DIR
 ```
 
-With a text editor, create and save a markdown file with the following content:
+With a text or markdown editor, create and save a markdown file with the following content:
 
-* Your name and job
+* Your name and what you do
 * One liner about your coding and math background
 * Any social web you use and don't mind sharing (twitter link, for example)
 * A data blog post you read recently for sharing with the class
@@ -57,16 +57,18 @@ With a text editor, create and save a markdown file with the following content:
 create a branch of the repository with a unique name, and then commit to that repo
 
 ```sh
-git checkout -b some_unique_name
+git checkout -b my_name_class_1
 git add .
 git commit -m 'my first git commit!'
 ```
 
 Add a pull request. This is the actual submission of your work. You can do this on github by finding your branch and clicking "Create pull request." Developers, feel free to use some command line tool for this if you prefer it.
 
+We'll be using the <a href="https://help.github.com/articles/using-pull-requests#fork--pull">Fork and Pull git model</a>.
+
 ## Next Steps
 
-We (Dave and Ed) will always recommend 4 or 5 readings or other support materials for every class, either to supplement the current material, prep for the next class, or covering previous material that students still have questions on.
+We will always recommend 4 or 5 readings or other support materials for every class, either to supplement the current material, prep for the next class, or covering previous material that students still have questions on.
 
 **Reading and other Materials**
 

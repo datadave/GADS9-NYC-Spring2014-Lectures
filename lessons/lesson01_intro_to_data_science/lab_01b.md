@@ -1,7 +1,8 @@
-# Data Mining Workflow
+# Data Mining Workflow and Unix Commands for a Data Scientist
 
 ### Getting NYTimes Data
 
+Use <a href="http://developer.nytimes.com/">http://developer.nytimes.com/</a> as our resource for signing up to get a nytimes API key. We'll be using the articles API key for the first few weeks of class.
 
 ```sh
 mkdir nytimes_data
