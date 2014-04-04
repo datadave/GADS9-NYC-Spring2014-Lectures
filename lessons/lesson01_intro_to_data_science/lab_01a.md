@@ -73,6 +73,7 @@ create a branch of the repository with a unique name, and then commit to that re
 git checkout -b my_name_class_1
 git add .
 git commit -m 'my first git commit!'
+git push origin my_name_class_1
 ```
 
 Add a pull request. This is the actual submission of your work. You can do this on github by finding your branch and clicking "Create pull request." Developers, feel free to use some command line tool for this if you prefer it.
