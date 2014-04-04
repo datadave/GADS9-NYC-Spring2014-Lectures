@@ -43,9 +43,9 @@ The easiest install is Anaconda's Python. <a href="https://store.continuum.io/cs
 **Note to Engineers:** If you prefer to not have anaconda's distribution as your primary python, comment out the `PATH` line for anaconda in `~/.bash_profile` and add an alias for anaconda's python, ipython and conda package handler:
 
 ```sh
-alias apython=~/anaconda/bin/python"
-alias ipython=~/anaconda/bin/ipython"
-alias conda=~/anaconda/bin/conda"
+alias apython="~/anaconda/bin/python"
+alias ipython="~/anaconda/bin/ipython"
+alias conda="~/anaconda/bin/conda"
 ```
 
 For visualizations we'll primarily use matplotlib and yhat's version of ggplot for python:
