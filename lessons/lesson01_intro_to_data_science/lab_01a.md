@@ -17,7 +17,7 @@ ruby -e "$(curl --insecure -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 * Macs: `brew install git`
 * Windows: Install git bash http://openhatch.org/missions/windows-setup/install-git-bash
-** The default options will probably work for you
+    * The default options will probably work for you
 * Linux: If you're on linux you should already know how to do this with your package manager. On Ubuntu you can use `apt-get install git`, otherwise find your <a href="http://git-scm.com/download/linux">distribution</a>
 
 **Note:** If you have issues with `brew install` because of an XCode error, try using this Heroku Toolbelt installation that will include git, or choose an OS based installation from this guide: http://git-scm.com/book/en/Getting-Started-Installing-Git
