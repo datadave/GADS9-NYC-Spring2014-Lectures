@@ -7,16 +7,31 @@
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 ```
 
+If you recieve an SSL certificate error:
+
+```sh
+ruby -e "$(curl --insecure -fsSL https://raw.github.com/mxcl/homebrew/go)"
+```
+
 ## Installing `git`
 
 * Macs: `brew install git`
 * Windows: Install git bash http://openhatch.org/missions/windows-setup/install-git-bash
+    * The default options will probably work well for you
 * Linux: If you're on linux you should already know how to do this with your package manager. On Ubuntu you can use `apt-get install git`, otherwise find your <a href="http://git-scm.com/download/linux">distribution</a>
 
 **Note:** If you have issues with `brew install` because of an XCode error, try using this Heroku Toolbelt installation that will include git, or choose an OS based installation from this guide: http://git-scm.com/book/en/Getting-Started-Installing-Git
 
-Once you've setup git and github, clone the class repository. We're using it for lab assignments and project collection.
+Once you've setup git and github, clone your fork of the class repository. We'll be using the <a href="https://help.github.com/articles/using-pull-requests#fork--pull">Fork and Pull git model</a>. You will be pushing changes to your forked repository, and submitting pull requests to the class repository.
 
+From the github help page:
+> The Fork & Pull Model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer.
+
+```sh
+cd ~/; git clone git@github.com:<your github username>/GADS9-NYC-Spring2014.git
+```
+
+For example:
 ```sh
 cd ~/; git clone git@github.com:datadave/GADS9-NYC-Spring2014.git
 ```
@@ -28,15 +43,21 @@ The easiest install is Anaconda's Python. <a href="https://store.continuum.io/cs
 **Note to Engineers:** If you prefer to not have anaconda's distribution as your primary python, comment out the `PATH` line for anaconda in `~/.bash_profile` and add an alias for anaconda's python, ipython and conda package handler:
 
 ```sh
-alias apython="/Users/edjoy/anaconda/bin/python"
-alias ipython="/Users/edjoy/anaconda/bin/ipython"
-alias conda="/Users/edjoy/anaconda/bin/conda"
+alias apython="~/anaconda/bin/python"
+alias ipython="~/anaconda/bin/ipython"
+alias conda="~/anaconda/bin/conda"
 ```
 
 For visualizations we'll primarily use matplotlib and yhat's version of ggplot for python:
 
 ```sh
 conda install -c https://conda.binstar.org/public ggplot
+```
+
+Users experiencing ggplot package errors should try pip (this problem was observed on Ubuntu and Windows):
+
+```sh
+pip install ggplot
 ```
 
 ## Lab Submissions
@@ -60,11 +81,12 @@ create a branch of the repository with a unique name, and then commit to that re
 git checkout -b my_name_class_1
 git add .
 git commit -m 'my first git commit!'
+git push origin my_name_class_1
 ```
 
 Add a pull request. This is the actual submission of your work. You can do this on github by finding your branch and clicking "Create pull request." Developers, feel free to use some command line tool for this if you prefer it.
 
-We'll be using the <a href="https://help.github.com/articles/using-pull-requests#fork--pull">Fork and Pull git model</a>.
+Again, a link to github documentation on the <a href="https://help.github.com/articles/using-pull-requests#fork--pull">Fork and Pull git model</a>.
 
 ## Next Steps
 
