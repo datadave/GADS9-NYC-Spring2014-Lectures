@@ -17,15 +17,20 @@ ruby -e "$(curl --insecure -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 * Macs: `brew install git`
 * Windows: Install git bash http://openhatch.org/missions/windows-setup/install-git-bash
-    * The default options will probably work for you
+    * The default options will probably work well for you
 * Linux: If you're on linux you should already know how to do this with your package manager. On Ubuntu you can use `apt-get install git`, otherwise find your <a href="http://git-scm.com/download/linux">distribution</a>
 
 **Note:** If you have issues with `brew install` because of an XCode error, try using this Heroku Toolbelt installation that will include git, or choose an OS based installation from this guide: http://git-scm.com/book/en/Getting-Started-Installing-Git
 
-Once you've setup git and github, clone the class repository. We're using it for lab assignments and project collection.
+Once you've setup git and github, clone your fork of the class repository. We'll be using the <a href="https://help.github.com/articles/using-pull-requests#fork--pull">Fork and Pull git model</a>. You will be pushing changes to your forked repository, and submitting pull requests to the class repository.
 
-```sh
-cd ~/; git clone git@github.com:datadave/GADS9-NYC-Spring2014.git
+From the github help page:
+```
+The Fork & Pull Model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer.
+```
+
+```kh
+cd ~/; git clone git@github.com:<your github username>/GADS9-NYC-Spring2014.git
 ```
 
 ## `python`
@@ -46,7 +51,7 @@ For visualizations we'll primarily use matplotlib and yhat's version of ggplot f
 conda install -c https://conda.binstar.org/public ggplot
 ```
 
-Users experiencing ggplot package errors (this problem was observed in Ubuntu and on Windows):
+Users experiencing ggplot package errors should try pip (this problem was observed on Ubuntu and Windows):
 
 ```sh
 pip install ggplot
@@ -78,7 +83,7 @@ git push origin my_name_class_1
 
 Add a pull request. This is the actual submission of your work. You can do this on github by finding your branch and clicking "Create pull request." Developers, feel free to use some command line tool for this if you prefer it.
 
-We'll be using the <a href="https://help.github.com/articles/using-pull-requests#fork--pull">Fork and Pull git model</a>.
+Again, a link to github documentation on the <a href="https://help.github.com/articles/using-pull-requests#fork--pull">Fork and Pull git model</a>.
 
 ## Next Steps
 
