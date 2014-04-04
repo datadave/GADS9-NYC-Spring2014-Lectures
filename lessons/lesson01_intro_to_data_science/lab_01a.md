@@ -25,9 +25,7 @@ ruby -e "$(curl --insecure -fsSL https://raw.github.com/mxcl/homebrew/go)"
 Once you've setup git and github, clone your fork of the class repository. We'll be using the <a href="https://help.github.com/articles/using-pull-requests#fork--pull">Fork and Pull git model</a>. You will be pushing changes to your forked repository, and submitting pull requests to the class repository.
 
 From the github help page:
-```
-The Fork & Pull Model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer.
-```
+> The Fork & Pull Model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer.
 
 ```kh
 cd ~/; git clone git@github.com:<your github username>/GADS9-NYC-Spring2014.git
