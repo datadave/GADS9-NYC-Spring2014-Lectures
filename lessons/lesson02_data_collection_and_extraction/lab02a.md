@@ -1,21 +1,32 @@
 ## Python Data Structures
 
+## Code Commenting Exercise
+
+In order to really understand fundamentals (and to be a great programmer/data scientist), it's absolutely essential to comment your code in order to understand what it is doing.
+
+Below we will go through a brief introduction to each data structure in python. For each line, run the command in python, and write a comment above the line to explain what it does.
+
 ### Strings
 
 * A string is a container of characters.
 * Python strings are immutable, meaning they cannot change once assigned.
 
 ```python
+# This is a comment!
+# Storing a string to the variable s
 s = "Hello world, world"
+# printing the type. It shows 'str' which means it is a string type
 print type(s)
+# printing the number of characters in the string.
 print len(s)
+# Python gave me an error below! I guess we can't change individual parts of a string this way.
 s[0] = 'h'
+# from here continue writing a comment for each line explaining what the following line does.
 s2 = s.replace("world", "python")
 s3 = s2.replace("Hello","monty")
 print s
 print s2
 print s3
-print s
 print s[6:11]
 print s[6:]
 print s[-2:]
@@ -132,4 +143,3 @@ nissan.stop()
 1. Change the Car class to have a default of 4 wheels, but can be set to any number
 2. **Extra** if the car is told it has less than 0 wheels, make sure it sets to 0 and prints out that you can't have negative wheels on a car.
 3. in lab_submissions/lab02/your_folder, submit a python file with all of your commented code from above, and the modifications you made to the Car class.
-
