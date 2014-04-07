@@ -1,0 +1,6 @@
+I worked as a developer primarily in java a few years ago. I've also dabbled in C and C++ and I'am learning Python via thinkful now.
+I've done Math all through my career recently some probability as part of my MBA coursework.
+My linkedin profile: www.linkedin.com/in/gdeepti/
+
+The last blog post I read recently talks about the skillset for data sience and the shortage in the field.
+http://blogs.wsj.com/cio/2014/02/14/it-takes-teams-to-solve-the-data-scientist-shortage/
