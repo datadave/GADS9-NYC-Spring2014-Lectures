@@ -1,0 +1,9 @@
+Your name and what you do:
+	My name is Rob Phillips.  I am currently in between jobs but am very interested in data analytics.  My background is finance and most recently I was doing financial consulting.
+
+One liner about your coding and math background:
+	I have essentially no coding experience other than finishing 50% of of Code Acadamy's Intro to Python.  My highest math course is college caclulus.
+Any social web you use and don't mind sharing (twitter link, for example)
+
+A data blog post you read recently for sharing with the class:
+http://in.reuters.com/article/2014/03/24/venture-actifio-idINL2N0MI1XZ20140324
