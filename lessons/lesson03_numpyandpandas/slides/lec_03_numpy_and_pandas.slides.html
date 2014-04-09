@@ -1732,369 +1732,134 @@ text-align: inherit;
 <body>
 <div class="reveal">
 <div class="slides">
-<div style=display:none>
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[7]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">!</span> ipython nbconvert lec_03_IPythonNB_Running.ipynb --to slides
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
-[NbConvertApp] Writing 213001 bytes to lec_03_IPythonNB_Running.slides.html
-[NbConvertApp] Using existing profile dir: u&apos;/Users/dave/.ipython/profile_default&apos;
-[NbConvertApp] Converting notebook lec_03_IPythonNB_Running.ipynb to slides
-[NbConvertApp] Support files will be in lec_03_IPythonNB_Running_files/
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div><div style=display:none>
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[*]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">!</span>python -m SimpleHTTPServer
-</pre></div>
-
-</div>
-</div>
-
-<div class="vbox output_wrapper">
-<div class="output vbox">
-
-
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
-<pre>
-Serving HTTP on 0.0.0.0 port 8000 ...
-127.0.0.1 - - [08/Apr/2014 23:44:32] &quot;GET /lec_03_IPythonNB_Running.slides.html HTTP/1.1&quot; 200 -
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
+<section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Running-Code-in-the-IPython-Notebook">Running Code in the IPython Notebook<a class="anchor-link" href="#Running-Code-in-the-IPython-Notebook">&#182;</a></h1>
-</div>
-</section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>First and foremost, the IPython Notebook is an interactive environment for writing and running Python code.</p>
-</div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="motivation">Motivation</h1>
-<div class="figure">
-<img src="http://note.io/1k1s0gQ" />
-</div>
-</div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="first-lets-take-a-look-at-the-ipython-shell-that-the-notebook-sits-on-top-of">First, let's take a look at the IPython shell that the Notebook sits on top of</h2>
-</div></section><section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="ipython----an-enhanced-interactive-python">IPython -- An enhanced Interactive Python</h1>
-<p>IPython offers a combination of convenient shell features, special commands and a history mechanism for both input (command history) and output (results caching, similar to Mathematica). It is intended to be a fully compatible replacement for the standard Python interpreter, while offering vastly improved functionality and flexibility.</p>
-</div><div class="fragment">
-    
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Magic Commands</p>
-<pre><code>%magic</code></pre>
-</div>
-    </div><div class="fragment">
-    
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>TAB completions</p>
-</div>
-    </div><div class="fragment">
-    
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Dynamic Object Information</p>
-<pre><code>?word</code></pre>
-</div>
-    </div><div class="fragment">
-    
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Input and Output caching</p>
-</div>
-    </div></section><section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="to-run">To run:</h3>
-<pre><code>ipython
-
-?</code></pre>
-<p><em>review the help later if interested</em></p>
-</div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="ipython-notebook">IPython Notebook</h1>
+<h2 id="agenda">Agenda</h2>
 <ul>
-<li>Full manual: http://ipython.org/notebook.html</li>
+<li>Numpy</li>
+<li>Pandas</li>
+<li>Lab</li>
 </ul>
-<p>Starting the notebook server Start running a notebook server from the command line using the following command:</p>
-<pre><code>ipython notebook</code></pre>
-<p>This will print some information about the notebook server in your console, and open a web browser to the URL of the web application (by default, http://127.0.0.1:8888).</p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="introduction">Introduction</h2>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="figure">
+<img src="http://note.io/1lKHupx" />
+</div>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Code-cells-allow-you-to-enter-and-run-Python-code">Code cells allow you to enter and run Python code<a class="anchor-link" href="#Code-cells-allow-you-to-enter-and-run-Python-code">&#182;</a></h2>
-</div>
-<div class="fragment">
-    
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Run a code cell using <code>Shift-Enter</code> or pressing the &quot;Play&quot; button in the toolbar above:</p>
-</div>
-    </div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
+<h1 id="create-a-new-notebook-for-your-code-along">Create a new notebook for your code-along:</h1>
+<p>If necessary, from our lab03 submission directory type</p>
+<pre><code>ipython notebook</code></pre>
+<p>from the IPython Dashboard open a new notebook. Change the title to &quot;Numpy and Pandas&quot;</p>
+</div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Managing-the-IPython-Kernel">Managing the IPython Kernel<a class="anchor-link" href="#Managing-the-IPython-Kernel">&#182;</a></h2>
-</div>
-</section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Code is run in a separate process called the IPython Kernel. The Kernel can be interrupted or restarted. Try running the following cell and then hit the &quot;Stop&quot; button in the toolbar above.</p>
-</div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">time</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>If the Kernel dies you will be prompted to restart it. Here we call the low-level system libc.time routine with the wrong argument via ctypes to segfault the Python interpreter:</p>
-</div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[*]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">from</span> <span class="nn">ctypes</span> <span class="kn">import</span> <span class="n">CDLL</span>
-<span class="c"># This will crash a Linux or Mac system; equivalent calls can be made on Windows</span>
-<span class="n">dll</span> <span class="o">=</span> <span class="s">&#39;dylib&#39;</span> <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s">&#39;darwin&#39;</span> <span class="k">else</span> <span class="s">&#39;so.6&#39;</span>
-<span class="n">libc</span> <span class="o">=</span> <span class="n">CDLL</span><span class="p">(</span><span class="s">&quot;libc.</span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">dll</span><span class="p">)</span> 
-<span class="n">libc</span><span class="o">.</span><span class="n">time</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>  <span class="c"># BOOM!!</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="All-of-the-goodness-of-IPython-works">All of the goodness of IPython works<a class="anchor-link" href="#All-of-the-goodness-of-IPython-works">&#182;</a></h2>
-</div>
-</section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Here are two system aliases:</p>
-</div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">pwd</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">ls</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Any command line program can be run using <code>!</code> with string interpolation from Python variables:</p>
-</div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">message</span> <span class="o">=</span> <span class="s">&#39;The IPython notebook is great!&#39;</span>
-<span class="c"># note: the echo command does not run on Windows, it&#39;s a unix command.</span>
-<span class="o">!</span><span class="nb">echo</span> <span class="nv">$message</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Tab completion works:</p>
-</div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span>
-<span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Tab completion after <code>(</code> brings up a tooltip with the docstring:</p>
-</div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Adding <code>?</code> opens the docstring in the pager below:</p>
-</div><div class="fragment">
-    
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">magic</span><span class="err">?</span>
-</pre></div>
-
-</div>
-</div>
-
-</div>
-    </div></section>
-    </section><section>
-    <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Working-with-external-code">Working with external code<a class="anchor-link" href="#Working-with-external-code">&#182;</a></h2>
-</div>
-</section><section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>There are a number of ways of getting external code into code cells.</p>
+<h2 id="introduction-to-numpy">Introduction to Numpy</h2>
+<ul>
+<li>Overview</li>
+<li>ndarray</li>
+<li>Indexing and Slicing</li>
+</ul>
+<p>More info: <a href="http://wiki.scipy.org/Tentative_NumPy_Tutorial">http://wiki.scipy.org/Tentative_NumPy_Tutorial</a></p>
 </div></section><section>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Pasting code with <code>&gt;&gt;&gt;</code> prompts works as expected:</p>
+<h1 id="numpy-overview">Numpy Overview</h1>
+<ul>
+<li>Why Python for Data? Numpy brings decades of C math into Python</li>
+<li>Numpy provides wrapper for extensive C/C++/Fortran codebases for data analysis and analytical functionality</li>
+<li>NDAarray allows easy vectorized math and broadcasting (functions on vector elements of different shapes)</li>
+<li>The computational foundation fro</li>
+</ul>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span> <span class="c">#Load all the numpy packages</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="note-import-as">Note: &quot;import as&quot;</h2>
+<p>import * loads all sub module and is wasteful of memory when incorporated into deployed code. We use it here by example -- and its fine to use for learning purposes, legibility, etc.</p>
+<p>As we'll see later, the the convention is to use:</p>
+<pre><code>import numpy as np</code></pre>
+<p>And then to specifically call needed methods:</p>
+<div class="figure">
+<img src="http://note.io/1juA60F" />
+</div>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="creating-ndarrays">Creating ndarrays</h3>
+</div><div class="fragment">
+    
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>An array object represents a multidimensional, homogeneous array of fixed-size items.</p>
+</div>
+    </div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Creating arrays</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What are these functions?</p>
+<pre><code>arange?</code></pre>
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Note the way each array is printed:</span>
+<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c">## Arithmetic in arrays is element wise</span>
+</pre></div>
+
+</div>
+</div>
+
 </div><div class="fragment">
     
 <div class="cell border-box-sizing code_cell vbox">
@@ -2103,9 +1868,40 @@ In&nbsp;[]:
 In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">the_world_is_flat</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">the_world_is_flat</span><span class="p">:</span>
-<span class="o">...</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Be careful not to fall off!&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">]</span> <span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span> <span class="mi">4</span> <span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="n">b</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">c</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span>
 </pre></div>
 
 </div>
@@ -2114,7 +1910,7 @@ In&nbsp;[]:
 </div>
     </div></section><section>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The <code>%load</code> magic lets you load code from URLs or local files:</p>
+<h2 id="indexing-slicing-and-iterating">Indexing, Slicing and Iterating</h2>
 </div><div class="fragment">
     
 <div class="cell border-box-sizing code_cell vbox">
@@ -2123,7 +1919,8 @@ In&nbsp;[]:
 In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">%</span><span class="k">matplotlib</span> <span class="n">inline</span>
+<div class="highlight"><pre><span class="c"># one-dimensional arrays work like lists:</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
 </pre></div>
 
 </div>
@@ -2135,17 +1932,1073 @@ In&nbsp;[]:
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
 <div class="prompt input_prompt">
-In&nbsp;[15]:
+In&nbsp;[]:
 </div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="o">%</span><span class="k">load</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">sourceforge</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">mpl_examples</span><span class="o">/</span><span class="n">pylab_examples</span><span class="o">/</span><span class="n">integral_demo</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight"><pre><span class="n">a</span>
 </pre></div>
 
 </div>
 </div>
 
 </div>
-    </div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Multidimensional arrays use tuples with commas for indexing</span>
+<span class="c"># with (row,column) conventions beginning, as always in Python, from 0</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">,(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">b</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Guess the output</span>
+<span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="n">b</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,:]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="pandas">Pandas</h2>
+<ul>
+<li>Object Creation</li>
+<li>Viewing data</li>
+<li>Selection</li>
+<li>Missing data</li>
+<li>Grouping</li>
+<li>Reshaping</li>
+<li>Time series</li>
+<li>Plotting</li>
+<li>i/o</li>
+</ul>
+<p><em>pandas.pydata.org</em></p>
+</div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="pandas-overview">Pandas Overview</h2>
+<p><em>Source: <a href="http://pandas.pydata.org/pandas-docs/stable/10min.html">pandas.pydata.org</a></em></p>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">dates</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s">&#39;20140101&#39;</span><span class="p">,</span><span class="n">periods</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span><span class="n">index</span><span class="o">=</span><span class="n">dates</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="s">&#39;ABCD&#39;</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Index, columns, underlying numpy data</span>
+<span class="n">df</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s">&#39;A&#39;</span> <span class="p">:</span> <span class="mf">1.</span><span class="p">,</span>
+                         <span class="s">&#39;B&#39;</span> <span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s">&#39;20130102&#39;</span><span class="p">),</span>
+                         <span class="s">&#39;C&#39;</span> <span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)),</span><span class="n">dtype</span><span class="o">=</span><span class="s">&#39;float32&#39;</span><span class="p">),</span>
+                         <span class="s">&#39;D&#39;</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="mi">4</span><span class="p">,</span><span class="n">dtype</span><span class="o">=</span><span class="s">&#39;int32&#39;</span><span class="p">),</span>
+                         <span class="s">&#39;E&#39;</span> <span class="p">:</span> <span class="s">&#39;foo&#39;</span> <span class="p">})</span>
+    
+
+<span class="n">df2</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># With specific dtypes</span>
+<span class="n">df2</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="viewing-data">Viewing Data</h4>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">index</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s">&#39;B&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="selection">Selection</h3>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="p">[</span><span class="s">&#39;A&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># By label</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">dates</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># multi-axis by label</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,[</span><span class="s">&#39;A&#39;</span><span class="p">,</span><span class="s">&#39;B&#39;</span><span class="p">]]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Date Range</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s">&#39;20140102&#39;</span><span class="p">:</span><span class="s">&#39;20140104&#39;</span><span class="p">,[</span><span class="s">&#39;B&#39;</span><span class="p">]]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Fast access to scalar</span>
+<span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">dates</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="s">&#39;B&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># iloc provides integer locations similar to np style</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="boolean-indexing">Boolean Indexing</h4>
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">A</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span> <span class="c"># Basically a &#39;where&#39; operation</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="setting">Setting</h4>
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df_posA</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c"># Without &quot;copy&quot; it would act on the dataset</span>
+<span class="n">df_posA</span><span class="p">[</span><span class="n">df_posA</span><span class="o">.</span><span class="n">A</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">df_posA</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df_posA</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c">#Setting new column aligns data by index</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span><span class="n">index</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s">&#39;20140102&#39;</span><span class="p">,</span><span class="n">periods</span><span class="o">=</span><span class="mi">6</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">s1</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="p">[</span><span class="s">&#39;F&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">s1</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="missing-data">Missing Data</h3>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Add a column with missing data</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">dates</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span><span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="s">&#39;E&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">dates</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span><span class="n">dates</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="s">&#39;E&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df1</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># find where values are null</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">df1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="operations">Operations</h3>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c"># Operation on two different axes</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="applying-functions">Applying functions</h3>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Built in string methods</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s">&#39;A&#39;</span><span class="p">,</span> <span class="s">&#39;B&#39;</span><span class="p">,</span> <span class="s">&#39;C&#39;</span><span class="p">,</span> <span class="s">&#39;Aaba&#39;</span><span class="p">,</span> <span class="s">&#39;Baca&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="s">&#39;CABA&#39;</span><span class="p">,</span> <span class="s">&#39;dog&#39;</span><span class="p">,</span> <span class="s">&#39;cat&#39;</span><span class="p">])</span>
+<span class="n">s</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="merge">Merge</h3>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c">#Concatenating pandas objects together</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">df</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Break it into pieces</span>
+<span class="n">pieces</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[:</span><span class="mi">3</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">7</span><span class="p">],</span><span class="n">df</span><span class="p">[</span><span class="mi">7</span><span class="p">:]]</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">pieces</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Also can &quot;Join&quot; and &quot;Append&quot;</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="grouping">Grouping</h3>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s">&#39;A&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s">&#39;foo&#39;</span><span class="p">,</span> <span class="s">&#39;bar&#39;</span><span class="p">,</span> <span class="s">&#39;foo&#39;</span><span class="p">,</span> <span class="s">&#39;bar&#39;</span><span class="p">,</span>
+                       <span class="s">&#39;foo&#39;</span><span class="p">,</span> <span class="s">&#39;bar&#39;</span><span class="p">,</span> <span class="s">&#39;foo&#39;</span><span class="p">,</span> <span class="s">&#39;foo&#39;</span><span class="p">],</span>
+                       <span class="s">&#39;B&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s">&#39;one&#39;</span><span class="p">,</span> <span class="s">&#39;one&#39;</span><span class="p">,</span> <span class="s">&#39;two&#39;</span><span class="p">,</span> <span class="s">&#39;three&#39;</span><span class="p">,</span>
+                             <span class="s">&#39;two&#39;</span><span class="p">,</span> <span class="s">&#39;two&#39;</span><span class="p">,</span> <span class="s">&#39;one&#39;</span><span class="p">,</span> <span class="s">&#39;three&#39;</span><span class="p">],</span>
+                       <span class="s">&#39;C&#39;</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
+                       <span class="s">&#39;D&#39;</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">8</span><span class="p">)})</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s">&#39;A&#39;</span><span class="p">,</span><span class="s">&#39;B&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="reshaping">Reshaping</h3>
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># You can also stack or unstack levels</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s">&#39;A&#39;</span><span class="p">,</span><span class="s">&#39;B&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Pivot Tables</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;C&#39;</span><span class="p">,</span><span class="s">&#39;D&#39;</span><span class="p">],</span><span class="n">rows</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;A&#39;</span><span class="p">],</span><span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;B&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="time-series">Time Series</h3>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># 100 Seconds starting on January 1st</span>
+<span class="n">rng</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s">&#39;1/1/2014&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s">&#39;S&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Give each second a random value</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">rng</span><span class="p">)),</span> <span class="n">index</span><span class="o">=</span><span class="n">rng</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">ts</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Built in resampling</span>
+<span class="n">ts</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s">&#39;1Min&#39;</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s">&#39;mean&#39;</span><span class="p">)</span> <span class="c"># Resample secondly to 1Minutely</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Many additional time series features</span>
+<span class="n">ts</span><span class="o">.</span> <span class="c">#use tab</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="plotting">Plotting</h3>
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">ts</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">randwalk</span><span class="p">(</span><span class="n">startdate</span><span class="p">,</span><span class="n">points</span><span class="p">):</span>
+    <span class="n">ts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">points</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">startdate</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="n">points</span><span class="p">))</span>
+    <span class="n">ts</span><span class="o">=</span><span class="n">ts</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+    <span class="n">ts</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Using pandas to make a simple random walker by repeatedly running:</span>
+<span class="n">a</span><span class="o">=</span><span class="n">randwalk</span><span class="p">(</span><span class="s">&#39;1/1/2012&#39;</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="c"># Pandas plot function will print with labels as default</span>
+</pre></div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="n">ts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;A&#39;</span><span class="p">,</span> <span class="s">&#39;B&#39;</span><span class="p">,</span> <span class="s">&#39;C&#39;</span><span class="p">,</span> <span class="s">&#39;D&#39;</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">();</span><span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">();</span><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;best&#39;</span><span class="p">)</span> <span class="c">#</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="io">I/O</h3>
+<p>I/O is straightforward with, for example, pd.read_csv or df.to_csv</p>
+</div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="lab">Lab</h1>
+</div></section>
+    </section><section>
+    <section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="next-steps">Next Steps</h1>
+<p><strong>Recommended Resources</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="http://pandas.pydata.org/pandas-docs/stable/tutorials.html">Official Pandas Tutorials</a></td>
+<td align="left">Wes &amp; Company's selection of tutorials and lectures</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/jvns/pandas-cookbook">Julia Evans Pandas Cookbook</a></td>
+<td align="left">Great resource with examples from weather, bikes and 311 calls</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://bitbucket.org/hrojas/learn-pandas">Learn Pandas Tutorials</a></td>
+<td align="left">A great series of Pandas tutorials from Dave Rojas</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://github.com/ResearchComputing/Meetup-Fall-2013/tree/master/python">Research Computing Python Data PYNBs</a></td>
+<td align="left">A super awesome set of python notebooks from a meetup-based course exclusively devoted to pandas</td>
+</tr>
+</tbody>
+</table>
+</div></section>
+    </section>
 </div>
 </div>
 
