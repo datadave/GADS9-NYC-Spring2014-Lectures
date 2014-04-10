@@ -1,6 +1,6 @@
 # Lesson 3: IPython Notebook, Numpy and Pandas
 
-This lesson cover the IPython Notebook, and Numpy and Pandas which form the basis for much of the data analyics done in Python.
+This lesson covers the IPython Notebook, and Numpy and Pandas which form the basis for much of the data analytics done in Python.
 
 * [Introduction to IPython Notebook](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Teachers/blob/master/lessons/lesson03_numpyandpandas/lec_03_IPythonNBIntro.ipynb)
 * [Introduction to Numpy and Pandas](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Teachers/blob/master/lessons/lesson03_numpyandpandas/lec_03_numpy_and_pandas.ipynb)
