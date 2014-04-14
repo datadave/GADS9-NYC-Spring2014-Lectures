@@ -17,9 +17,24 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/reveal.js/2.4.0/lib/css/zenburn.css">
 
 <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<!-- CDN Wasn't working so trying new query
 <script>
 document.write( '<link rel="stylesheet" href="//cdn.jsdelivr.net/reveal.js/2.4.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 </script>
+-->
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  		<script>
+ -			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+ +			if( window.location.search.match( /print-pdf/gi ) ) {
+ +				var link = document.createElement( 'link' );
+ +				link.rel = 'stylesheet';
+ +				link.type = 'text/css';
+ +				link.href = 'css/print/pdf.css';
+ +				document.getElementsByTagName( 'head' )[0].appendChild( link );
+ +			}
+  		</script>
 
 <!--[if lt IE 9]>
 <script src="//cdn.jsdelivr.net/reveal.js/2.4.0/lib/js/html5shiv.js"></script>
@@ -1754,7 +1769,9 @@ In&nbsp;[10]:
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 [NbConvertApp] Writing 213672 bytes to lec_03_IPythonNB_Running.slides.html
+
 [NbConvertApp] Using existing profile dir: u&apos;/Users/dave/.ipython/profile_default&apos;
+
 
 </pre>
 </div>
@@ -1786,7 +1803,9 @@ In&nbsp;[11]:
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
 Serving HTTP on 0.0.0.0 port 8000 ...
+
 127.0.0.1 - - [08/Apr/2014 23:46:21] &quot;GET /lec_03_IPythonNB_Running.slides.html HTTP/1.1&quot; 200 -
+
 
 </pre>
 </div>
