@@ -86,11 +86,13 @@ _Wednesday	4/16/2014_
 
 #### Additional Resources
 
-Resource | About
-- | -
-[Matplotlib userguide](http://matplotlib.sourceforge.net/users/index.html) | mm
-[Matplotlib Gallery](http://matplotlib.org/gallery.html) | Examples with Code
-[Rougier and Prace EuroSciPy Matplotlib Tutorial](http://www.loria.fr/~rougier/teaching/matplotlib/) | Short Overview
+
+| Resource | About 
+| -------- | ----- 
+| [Basic Plotting in Pandas](http://pandas.pydata.org/pandas-docs/stable/visualization.html) |
+| [Matplotlib userguide](http://matplotlib.sourceforge.net/users/index.html) |  
+| [Matplotlib Gallery](http://matplotlib.org/gallery.html) | Examples with Code 
+| [Rougier and Prace EuroSciPy Matplotlib Tutorial](http://www.loria.fr/~rougier/teaching/matplotlib/) | Short Overview 
 
 
 
