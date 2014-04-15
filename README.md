@@ -84,6 +84,15 @@ _Wednesday	4/16/2014_
 * Complete and submit previous assignments
 
 
+#### Additional Resources
+
+Resource | About
+- | -
+[Matplotlib userguide](http://matplotlib.sourceforge.net/users/index.html) | mm
+[Matplotlib Gallery](http://matplotlib.org/gallery.html) | Examples with Code
+[Rougier and Prace EuroSciPy Matplotlib Tutorial](http://www.loria.fr/~rougier/teaching/matplotlib/) | Short Overview
+
+
 
 ## Exploratory Data Analysis
 _Monday	4/21/2014_
