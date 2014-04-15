@@ -99,6 +99,9 @@ _Wednesday	4/16/2014_
 ## Exploratory Data Analysis
 _Monday	4/21/2014_
 
+#### Assignments Due
+[Project 1: Scraping, APIs, and Data Visualization](Project 1https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/projects/project01.md)
+
 
 ## Presentations, Machine Learning, and Data Science Careers
 _Wednesday	4/23/2014_
