@@ -4,3 +4,6 @@
 # Exclude files in ignore/ folders:
 ignore/
 
+#Ignore .ignore files
+.ignore
+
