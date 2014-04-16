@@ -15,6 +15,9 @@ _Monday, 3/31/14_
 ## Data Collection and Extraction
 _Wednesday, 4/7/14_
 
+#### Project 1 Introduced
+* [Description for Project 1](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/projects/project01.md)
+
 #### Class Materials
 * [Lecture](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson02_data_collection_and_extraction/lec02.pdf)
 * [Lab 2a](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson02_data_collection_and_extraction/lab02a.md)
