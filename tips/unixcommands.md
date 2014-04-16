@@ -3,8 +3,8 @@
 **Note**: Tab completion is your friend.
 
 ### Some great cheat sheets:
-* [Command Reference](http://files.fosswire.com/2007/08/fwunixref.pdf): Awesome 1 pager
-* [The one page linux manual](http://www.digilife.be/quickreferences/QRC/The%20One%20Page%20Linux%20Manual.pdf): Ok so its grown to two pages now.  They should rename it to "one sheet".
+* [Command Reference](fwunixref.pdf): Be familiar with everything one this one pager by FOSS
+* [The one page linux manual](OnePageLinuxManual.pdf): Ok so its grown to two pages now.  They should rename it to "one sheet".
 
 ### Where am I?
     pwd
