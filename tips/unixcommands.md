@@ -58,3 +58,6 @@
 
 ### Getting help on a command
     man <command>       
+
+### Putting this all together to work with data
+Greg Reda has a great <a href="http://www.gregreda.com/2013/07/15/unix-commands-for-data-science/">post</a> sharing how we can work with data right at the command line.
