@@ -79,9 +79,9 @@ _Monday	4/14/2014_
 _Wednesday	4/16/2014_
 
 #### Class Materials
-[Lecture Notes: Data Visualization](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/lesson04/lessons/lesson04_matplotlib_and_EDA/DataVizLecture.pdf)
+[Lecture Notes: Data Visualization](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson04_matplotlib_and_EDA/DataVizLecture_v2.pdf)
 
-[Python Notebook: Plotting with Matplotlib](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/lesson04/lessons/lesson04_matplotlib_and_EDA/Visualization_Instructional_Set.ipynb)
+[Python Notebook: Plotting with Matplotlib](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson04_matplotlib_and_EDA/Visualization_Instructional_Set.ipynb)
 
 #### Assignments Due
 * Complete and submit previous assignments
