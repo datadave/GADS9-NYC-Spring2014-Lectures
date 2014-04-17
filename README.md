@@ -2,7 +2,12 @@ Data Science Course: Lectures and Materials
 =======
 _For the Spring 2014 Data Science course at General Assembly, NYC_
 
+##### Issues: For questions, answers and discussions:
+* [Closed and Open Issue List (via pulse)](https://github.com/datadave/GADS9-NYC-Spring2014-Students/pulse#closed-issues)
+* [Create a new issue](https://github.com/datadave/GADS9-NYC-Spring2014-Students/issues/new)
 
+
+# Class Meetings
 ## Introduction to Data Science
 _Monday, 3/31/14_
 
