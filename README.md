@@ -110,12 +110,12 @@ _We'll be reviewing a number of datasets and going through the Data Exploration 
 
 The ACES model for Data Exploration:
 
-Letter | Step | Resource(s)
+Letter | Step | Notes
 ------ | ---- | -----------
-A | Assemble the data frame | 
-C | Clean the data frame
-E | Explore global properties
-S | Subset comparisons
+A | Assemble the data frame | Find data, import into Pandas
+C | Clean the data frame | Identify and limit columns, rows, indices, dates, etc.
+E | Explore global properties | Visualize!  Basic plots and stats appropriate to the data set
+S | Subset comparisons | Look at (visualize!) initial emergenet variable relationships and subsets
 
 #### Resources
 * [EDA with SAT Scores](http://blog.kaggle.com/2013/01/17/getting-started-with-pandas-predicting-sat-scores-for-new-york-city-schools/)
