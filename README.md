@@ -2,7 +2,12 @@ Data Science Course: Lectures and Materials
 =======
 _For the Spring 2014 Data Science course at General Assembly, NYC_
 
+##### Issues: For questions, answers and discussions:
+* [Closed and Open Issue List (via pulse)](https://github.com/datadave/GADS9-NYC-Spring2014-Students/pulse#closed-issues)
+* [Create a new issue](https://github.com/datadave/GADS9-NYC-Spring2014-Students/issues/new)
 
+
+# Class Meetings
 ## Introduction to Data Science
 _Monday, 3/31/14_
 
@@ -79,9 +84,9 @@ _Monday	4/14/2014_
 _Wednesday	4/16/2014_
 
 #### Class Materials
-[Lecture Notes: Data Visualization](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/lesson04/lessons/lesson04_matplotlib_and_EDA/DataVizLecture.pdf)
+[Lecture Notes: Data Visualization](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson04_matplotlib_and_EDA/DataVizLecture_v2.pdf)
 
-[Python Notebook: Plotting with Matplotlib](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/lesson04/lessons/lesson04_matplotlib_and_EDA/Visualization_Instructional_Set.ipynb)
+[Python Notebook: Plotting with Matplotlib](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson04_matplotlib_and_EDA/Visualization_Instructional_Set.ipynb)
 
 #### Assignments Due
 * Complete and submit previous assignments
@@ -101,13 +106,39 @@ _Wednesday	4/16/2014_
 
 ## Exploratory Data Analysis
 _Monday	4/21/2014_
+_We'll be reviewing a number of datasets and going through the Data Exploration Process_
+
+The ACES model for Data Exploration:
+
+Letter | Step | Notes
+------ | ---- | -----------
+A | Assemble the data frame | Find data, import into Pandas
+C | Clean the data frame | Identify and limit columns, rows, indices, dates, etc.
+E | Explore global properties | Visualize!  Basic plots and stats appropriate to the data set
+S | Subset comparisons | Look at (visualize!) initial emergenet variable relationships and subsets
+
+#### Resources
+* [EDA with SAT Scores](http://blog.kaggle.com/2013/01/17/getting-started-with-pandas-predicting-sat-scores-for-new-york-city-schools/)
+* [Grouping with Pandas](http://pandas.pydata.org/pandas-docs/dev/groupby.html)
+* [Data Wrangling Movies](http://nbviewer.ipython.org/github/cs109/content/blob/master/lec_04_wrangling.ipynb)
+* [EDA Questions](http://www.itl.nist.gov/div898/handbook/eda/section3/eda32.htm)
+* [Volinksy EDA Presentation](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCYQFjAA&url=http%3A%2F%2Fwww2.research.att.com%2F~volinsky%2FDataMining%2FColumbia2011%2FSlides%2FTopic2-EDAViz.ppt&ei=VA9QU6ODNu2zsASDooCoAQ&usg=AFQjCNEnkeQXZF7l5fIrUGFIrX48qMYUPw&bvm=bv.64764171,d.cWc)
+
 
 #### Assignments Due
-[Project 1: Scraping, APIs, and Data Visualization](Project 1https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/projects/project01.md)
+N/A - Please review all prior materials and work on Project 1.
 
 
 ## Presentations, Machine Learning, and Data Science Careers
 _Wednesday	4/23/2014_
+#### Assignments Due
+[Project 1: Scraping, APIs, and Data Visualization](Project 1https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/projects/project01.md)
+
+#### Class Outline
+* Selected Presentations of Student Projects
+* Discussion of Data Science Careers
+* Introduction to Machine Learning
+
 
 <!--
 ## Matrix Algebra and Regression
