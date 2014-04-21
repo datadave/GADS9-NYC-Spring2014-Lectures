@@ -117,6 +117,9 @@ C | Clean the data frame | Identify and limit columns, rows, indices, dates, etc
 E | Explore global properties | Visualize!  Basic plots and stats appropriate to the data set
 S | Subset comparisons | Look at (visualize!) initial emergenet variable relationships and subsets
 
+#### Class Materials
+* [EDA Run Through - IMDB](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson05_EDA/explore_consumerpreference.ipynb)
+
 #### Resources
 * [EDA with SAT Scores](http://blog.kaggle.com/2013/01/17/getting-started-with-pandas-predicting-sat-scores-for-new-york-city-schools/)
 * [Grouping with Pandas](http://pandas.pydata.org/pandas-docs/dev/groupby.html)
