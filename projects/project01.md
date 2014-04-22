@@ -3,18 +3,18 @@
 **Project Goals**
 
 *   Introduce students to web scraping (and its challenges)
-*   Introduce students to basic statistical analysis and how to use visual aids
+*   Introduce students to basic statistical analysis, how to use visual aids and the exploratory data analysis procedure.
 
 **After the project, you will be able to:**
 
 *   Use tools and libraries such as BeautifulSoup, Kimono, Nokogiri to collect structured data from the internet, or API wrappers that help pull structured data.
-*   Store data in some shape or form (text file, database, json text files)
+*   Store data in a DataFrame, and export it in some shape or form (text file, database, json text files)
 *   Visualize data through means of Matplotlib or ggplot (the matplotlib wrapper)
-*   Provide insight about the data in front of their peers
+*   Provide insight about the data in front of your peers
 
 **Due Date and Grade Scale**
 
-*   Projects will be due on April 16th.
+*   Projects will be due on April 23rd.
 
     *   You'll be presenting your projects in small groups on that class day, so come prepared
     *   Expect to see all projects turned in before the beginning of class
