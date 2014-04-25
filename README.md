@@ -6,6 +6,9 @@ _For the Spring 2014 Data Science course at General Assembly, NYC_
 * [Closed and Open Issue List (via pulse)](https://github.com/datadave/GADS9-NYC-Spring2014-Students/pulse#closed-issues)
 * [Create a new issue](https://github.com/datadave/GADS9-NYC-Spring2014-Students/issues/new)
 
+##### Viewing Your and Other Student Work:
+[iPython Notebook Viewer for this class's student repo](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Students/tree/master/lab_submissions/)
+
 ##### Git Workflow and Command Line Tips:
 * [Tips](tips/README.md)
 
