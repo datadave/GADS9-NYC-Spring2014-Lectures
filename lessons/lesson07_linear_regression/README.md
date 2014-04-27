@@ -7,4 +7,4 @@ _We'll be discussing the linear regression algorithm and learn about scoring reg
 * [Lab Material](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson07_linear_regression/Linear%20Regression.ipynb)
 
 #### Assignments Due
-Please submit three optimized models using the `data/day.csv` file in an ipython notebook or python script for each y variable casual, registered, and cnt
+Please submit three optimized models using the `data/day.csv` file in an ipython notebook or python script for each y variable casual, registered, and cnt. Please put this in a `lab_submissions/lab07/yourname` folder.
