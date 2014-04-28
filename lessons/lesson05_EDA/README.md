@@ -13,6 +13,7 @@ S | Subset comparisons | Look at (visualize!) initial emergenet variable relatio
 
 #### Class Materials
 * [EDA Run Through - IMDB](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson05_EDA/explore_consumerpreference.ipynb)
+* [EDA Run Through - Bike Share](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson05_EDA/bike_share.ipynb)
 
 #### Resources
 * [EDA with SAT Scores](http://blog.kaggle.com/2013/01/17/getting-started-with-pandas-predicting-sat-scores-for-new-york-city-schools/)

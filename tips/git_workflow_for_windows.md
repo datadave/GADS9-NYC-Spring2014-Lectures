@@ -104,7 +104,7 @@ But don't push any changes.
 
 ## Students Repository
 
-You will fork the [Lectures](https://github.com/datadave/GADS9-NYC-Spring2014-Students) repository so that you have access rights to push changes. This is a standard model used by many git-controlled projects.
+You will fork the [Students](https://github.com/datadave/GADS9-NYC-Spring2014-Students) repository so that you have access rights to push changes. This is a standard model used by many git-controlled projects.
 
 ### Fork the datadave Students Repository
 
