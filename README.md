@@ -166,13 +166,11 @@ Please submit three optimized models using the `data/day.csv` file in an ipython
 | [Regressions with Sklearn](http://www.datarobot.com/blog/regularized-linear-regression-with-scikit-learn/) |  
 | [Overfitting Regressions](http://shapeofdata.wordpress.com/2013/03/26/general-regression-and-over-fitting/) |  
 | [Guide to Logistic Regression](http://blog.yhathq.com/posts/logistic-regression-and-python.html) |  
+| [Khan Academy Algebra Review](https://www.khanacademy.org/math/linear-algebra) |
+| [MIT OCW](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm) |
 
 
-
-
-## Matrix Algebra and Regression
-_Monday	4/28/2014_
-
+## Naive Bayes
 _Wednesday 4/30/2014_
 _We'll be reviewing some basics of probability, developing ways to work with text data, and using a classification algorithm to classify text._
 
@@ -183,10 +181,10 @@ _We'll be reviewing some basics of probability, developing ways to work with tex
 * Create a basic Naive Bayes classifier
 
 #### Materials
-* [NB_Gender_Names_NLTK:]() Notebook covering basics of Naive Bayes with single features
-* [NB_Biebama_NLTK:]() Demo: Classifying text as Obama or Bieber
-* [NB_Movies_SKLearn:]() Illustration of SK Learn NB functions
-* [NB_Movies_NTLK:]() Illustration of NB on text with NLTK
+* [NB_Gender_Names_NLTK:](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_probability_naive_bayes/NB_Gender_Names_NLTK.ipynb) Notebook covering basics of Naive Bayes with single features
+* [NB_Biebama_NLTK:](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_probability_naive_bayes/NB_Biebama_NLTK.ipynb) Demo: Classifying text as Obama or Bieber
+* [NB_Movies_SKLearn:](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_probability_naive_bayes/NB_Movies_SKLearn.ipynb) Illustration of SK Learn NB functions
+* [NB_Movies_NTLK:](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_probability_naive_bayes/NB_Movies_NLTK.ipynb) Illustration of NB on text with NLTK
 
 #### Assignments
 * Add a feature to the NLTK gender classifier to try and improve performance
