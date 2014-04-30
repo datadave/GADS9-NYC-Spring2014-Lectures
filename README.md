@@ -169,6 +169,8 @@ Please submit three optimized models using the `data/day.csv` file in an ipython
 | [Khan Academy Algebra Review](https://www.khanacademy.org/math/linear-algebra) |
 | [MIT OCW](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm) |
 
+
+## Naive Bayes
 _Wednesday 4/30/2014_
 _We'll be reviewing some basics of probability, developing ways to work with text data, and using a classification algorithm to classify text._
 
