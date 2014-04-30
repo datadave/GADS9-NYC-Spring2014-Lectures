@@ -166,12 +166,8 @@ Please submit three optimized models using the `data/day.csv` file in an ipython
 | [Regressions with Sklearn](http://www.datarobot.com/blog/regularized-linear-regression-with-scikit-learn/) |  
 | [Overfitting Regressions](http://shapeofdata.wordpress.com/2013/03/26/general-regression-and-over-fitting/) |  
 | [Guide to Logistic Regression](http://blog.yhathq.com/posts/logistic-regression-and-python.html) |  
-
-
-
-
-## Matrix Algebra and Regression
-_Monday	4/28/2014_
+| [Khan Academy Algebra Review](https://www.khanacademy.org/math/linear-algebra) |
+| [MIT OCW](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm) |
 
 _Wednesday 4/30/2014_
 _We'll be reviewing some basics of probability, developing ways to work with text data, and using a classification algorithm to classify text._
