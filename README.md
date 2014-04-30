@@ -170,7 +170,8 @@ Please submit three optimized models using the `data/day.csv` file in an ipython
 | [MIT OCW](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm) |
 
 
-## Naive Bayes
+## Naive Bayes 
+[(link to lesson folder)](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/tree/master/lessons/lesson08_probability_naive_bayes)
 _Wednesday 4/30/2014_
 _We'll be reviewing some basics of probability, developing ways to work with text data, and using a classification algorithm to classify text._
 
