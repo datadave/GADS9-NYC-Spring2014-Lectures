@@ -4,9 +4,9 @@ _We'll be reviewing some basics of probability, developing ways to work with tex
 
 #### Objectives
 * Articulate Naive Bayes' advantages, flaws, applications and theoretical foundation
-* Explain how Naive Bayes is applied to classify text or Spam
+* Explain how Naive Bayes is applied to classify text
 * Be familiar with using the N.B. classifiers in NLTK and SKLearn
-* Create a basic Naive Bayes classifier
+* Create a basic Naive Bayes classifier that distinguishes between two speakers
 
 #### Materials
 * [NB_Gender_Names_NLTK:]() Notebook covering basics of Naive Bayes with single features
@@ -18,5 +18,11 @@ _We'll be reviewing some basics of probability, developing ways to work with tex
 * Add a feature to the NLTK gender classifier to try and improve performance
 * Create a classifier to tell the difference between two authors
 * Brainstorm classification topics for projects (due May 14)
+
+#### Resources
+* [Learning to Classify Text with NLTK](http://www.nltk.org/book/ch06.html)
+* [SKL Naive Bayes Documentation](http://scikit-learn.org/stable/modules/naive_bayes.html)
+
+
 
 
