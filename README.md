@@ -195,6 +195,9 @@ _We'll be reviewing some basics of probability, developing ways to work with tex
 * Create a classifier to tell the difference between two authors
 * Brainstorm classification topics for projects (due May 14)
 
+#### Follow Up Notes
+Based on student feedback:
+* [Additional NB Notes](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_probability_naive_bayes/AdditionNBNotes.md)
 
 <!--
 
