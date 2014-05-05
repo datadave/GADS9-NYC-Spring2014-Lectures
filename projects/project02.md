@@ -21,7 +21,7 @@
 
     *   You'll be presenting your projects in small groups on that class day, so come prepared
     *   Expect to see all projects turned in before the beginning of class
-    *   If you get it to us earlier, Dave and I will try to provide early feedback
+    *   If you get it to us earlier, Dave and Ed will try to provide early feedback
 
 **Project Requirements**
 
@@ -29,7 +29,7 @@
 * Perform the ACES steps in EDA and produce a summary of your results
 * Describe a clear classification challenge and determine your algorithm and why you chose it.
 * Produce code for classification and feature improvement, including accuracy rates and feature details.
-* Prepare a short blog post with images that covers the four points above.
+* Prepare a short blog post with images that covers the four points above or a short presentation (something prepared to showcase your work aside from a iPython Notebook)
 
 **You will Submit**
 * All code
@@ -46,6 +46,5 @@
 *   Intro to Machine Learning
 *   Regression
 *   Naive Bayes
-*   KNN and K Means
+*   KNN
 *   Decision Trees
-
