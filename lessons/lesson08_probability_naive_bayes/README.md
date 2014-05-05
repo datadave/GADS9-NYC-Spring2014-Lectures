@@ -23,6 +23,8 @@ _We'll be reviewing some basics of probability, developing ways to work with tex
 * [Learning to Classify Text with NLTK](http://www.nltk.org/book/ch06.html)
 * [SKL Naive Bayes Documentation](http://scikit-learn.org/stable/modules/naive_bayes.html)
 
-
+#### Follow Up Notes
+Based on student feedback:
+* [Additional NB Notes](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_probability_naive_bayes/AdditionNBNotes.md)
 
 
