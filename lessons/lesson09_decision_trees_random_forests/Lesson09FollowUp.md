@@ -24,8 +24,10 @@ print clf.predict_proba(X)
 print clf.predict_log_proba(X)
 print clf.score(X, y) # This is also in regressions
 
-print clf.get_params() # Returns everything about how the classifier was created. This is useful in determining what is adjustable within the specific algorithm you are using.
-# 
+# Returns everything about how the classifier was created.
+# This is useful in determining what is adjustable within the specific
+# algorithm you are using.
+print clf.get_params()
 ```
 
 ####Why do we cover what we cover in class? Is it integral to data science, or just one out of hundreds?
