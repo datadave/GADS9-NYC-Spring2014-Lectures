@@ -71,6 +71,8 @@ print clf.get_params()
 * precision = true positives / (true positives + false positives)
 * accuracy = (true positives + true negatives) / total observations
 
+[Paper that breaks it all down](https://ccrma.stanford.edu/workshops/mir2009/references/ROCintro.pdf)
+
 ## Additional Assignments for Wednesday May 7
 #### Final Project Brainstorm
 * Review instructions for the [Final Project](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/projects/FinalProject.md)
