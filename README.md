@@ -199,14 +199,38 @@ _We'll be reviewing some basics of probability, developing ways to work with tex
 Based on student feedback:
 * [Additional NB Notes](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson08_probability_naive_bayes/AdditionNBNotes.md)
 
+## Classifier Comparison and Logistic Regression
+_Wednesday	5/7/2014_
+
+#### Objectives
+* Understand how to apply logistic regression to a classification problem
+* Create a two dimensional feature space to evalute the performance of classifiers
+* Leverage the interoperability of SKLearn classifiers to compare KNN, Naive Bayes, Decision Trees and Logistic Regression on a single classification problem
+
+#### Materials
+The lesson notebook provides:
+
+* A brief background on logistic classification
+* A mesh function using [np.meshgrid](http://docs.scipy.org/doc/numpy/reference/generated/numpy.meshgrid.html) to evaluate the predictive functions on a 2 dimensional feature grid
+
+The intention is to provide a starting template with which to contrast various classifiers on a clean, real-world data set.
+
+[Static Ipython Notebook](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson10/LogisticClassifying_Update_KNN_DT.ipynb)
+
+#### Assignments
+Students are expected add additional classifiers to the notebook, experiment with parameters, and develop conclusions about the differences between classifier performance on the given sample data.
+
+
+
 <!--
 
 
 ## KNN and K-Means
 _Monday	5/5/2014_
-
+-->
+<!--
 ## Decision Trees
-_Wednesday	5/7/2014_
+
 
 ## Principle Component Analysis
 _Monday	5/12/2014_
