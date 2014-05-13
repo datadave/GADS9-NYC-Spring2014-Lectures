@@ -5,7 +5,9 @@ As we've seen, there are many lifetimes of material that can be covered in data 
 
 Beginning with next week (5/19) we'll have five weeks remaining.
 
-Major Directions we might go include:
+We'll reserve 1 week for final presentations.
+
+Major Directions we might go for the remaining four include:
 
 * Statistical and Mathematical Underpinnings
 	* p-values, inference, 
