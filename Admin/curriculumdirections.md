@@ -10,9 +10,11 @@ We'll reserve 1 week for final presentations.
 Major Directions we might go for the remaining four include:
 
 * Statistical and Mathematical Underpinnings
-	* p-values, inference, 
-* Data Engineering
-	* munging, cleaning, subsetting, visualizing, maximizing speed, 
+	* p-values, inference
+* Data Analytics
+	* munging, cleaning, subsetting, visualizing
 * Developing Data Products
-	* flask, shiny, d3, 
+	* flask, shiny, d3
+* Data Engineering
+    * databases (SQL, NoSQL, Hadoop, scalable systems + infrastructure), maximizing speed + efficiency, writing Machine Learning from scratch
 
