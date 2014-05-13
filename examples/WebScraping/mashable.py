@@ -82,8 +82,6 @@ def findLinks(document):
 
     print "Found %d likely links"%(len(sectionsOfInterest))
     for h1 in sectionsOfInterest:
-        
-        # Within each of div is an anchor tag with class "title may-blank "
         anchor = h1.find('a')
         if anchor == None:
             sys.stderr.write('Encountered a bad anchor tag.\n')
