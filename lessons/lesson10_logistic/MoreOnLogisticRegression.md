@@ -76,12 +76,12 @@ Logistic Regression is a linear classifier over X. The linear classifiers produc
 
 ### Recommended Resources on Logistic Regression
 
-Title | Author | Type | Length | Difficulty | Description | Rating (1 to 4 Stars)
------ | ----- | - | - | - | - | - | - |
-Digging Into Data - Logistic Regression  ( [Video](https://www.youtube.com/watch?v=nMcxOiVj7oE) and [Slides](http://www.umiacs.umd.edu/~jbg/teaching/DATA_DIGGING/lecture_05.pdf) )| Jordan Boyd-Graber | Video, PDF | 30 mins | Easy | Worth a skim to get an easy to understand overview | +++
-[Logistic Regression](https://www.youtube.com/watch?v=-Z2a_mzl9LM) | Mathematical Monk | Video | 10 mins | Easy | Very quick Kahn-style intro to logistic with a good motivating example | +++
-[Logistic Regression Chapter](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf) | C Shalizi, CMU | PDF | 8 Pages | Advanced | Mathematical foundation for classification by logistic regression including maximizing likelihood discussion and derivation.  Good source for mathematical foundation | ++++
-[Logistic Regression with Python](http://blog.yhathq.com/posts/logistic-regression-and-python.html) | YHat |  Exercise/Tutorial | Estimated 1.5 hours | Medium | A good example to work through using statsmodels | ++++
+| Title | Author | Type | Length | Difficulty | Description | Rating (1 to 4 Stars)
+| ----- | ----- | ---- | ----- | ------ | --- | --- | --- |
+| Digging Into Data - Logistic Regression  ( [Video](https://www.youtube.com/watch?v=nMcxOiVj7oE) and [Slides](http://www.umiacs.umd.edu/~jbg/teaching/DATA_DIGGING/lecture_05.pdf) )| Jordan Boyd-Graber | Video, PDF | 30 mins | Easy | Worth a skim to get an easy to understand overview | +++
+| [Logistic Regression](https://www.youtube.com/watch?v=-Z2a_mzl9LM) | Mathematical Monk | Video | 10 mins | Easy | Very quick Kahn-style intro to logistic with a good motivating example | +++
+| [Logistic Regression Chapter](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf) | C Shalizi, CMU | PDF | 8 Pages | Advanced | Mathematical foundation for classification by logistic regression including maximizing likelihood discussion and derivation.  Good source for mathematical foundation | ++++
+| [Logistic Regression with Python](http://blog.yhathq.com/posts/logistic-regression-and-python.html) | YHat |  Exercise/Tutorial | Estimated 1.5 hours | Medium | A good example to work through using statsmodels | ++++
 
 _Note: Please add and notate any additional resources you find helpful_
 
