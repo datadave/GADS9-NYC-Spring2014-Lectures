@@ -9,3 +9,5 @@ The intention is to provide a starting template with which to contrast various c
 
 
 [Static Ipython Notebook](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson10/LogisticClassifying_Update_KNN_DT.ipynb)
+
+[More on Logistic Regression](MoreOnLogisticRegression.md)
