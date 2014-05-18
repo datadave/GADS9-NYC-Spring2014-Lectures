@@ -5,7 +5,7 @@ Humans are good, often too good, at clustering, and its another realm of our int
 
 Machine clustering is used to categorize the web, understand galaxies, organize genetic, segment customers, classify mental illness, and detect disease patterns, to name just a few applications.
 
-K Means is a very simple algorithm for classifying that works well and is by far the most widely used.
+K Means is a very simple algorithm for clustering that works well and is by far the most widely used.
 
 Here's some resources to get started:
 
