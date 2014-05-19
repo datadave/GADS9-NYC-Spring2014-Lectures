@@ -17,6 +17,6 @@ Here's some resources to get started:
 | [K-Means Clustering](https://www.youtube.com/watch?v=0MQEt10e4NM) | Mathematical Monk | Video | 15 minute | Novice | Good Kahn style overview of math | +++
 | [K-Means Wikipedia Entry](http://en.wikipedia.org/wiki/K-means_clustering) | Everyone | Wikipedia | 6 pages | Intermediate | Includes Iris and 'mickey mouse' we'll be looking at. | ++
 
-[Class Lecture](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson13_kmeans/ GA13_Lecture_Kmeans_v2.pdf)
+[Class Lecture](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson13_kmeans/GA13_Lecture_Kmeans_v2.pdf?raw=true)
 
 [Link to View Notebooks](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/tree/master/lessons/lesson13_kmeans/)
