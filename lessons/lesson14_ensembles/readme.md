@@ -1,5 +1,6 @@
 Review of Random Forests and the Ensemble Learning Approach
 ======================================
+_Wednesday, May 21st_
 
 We'll wrap up all machine learning material by having a more in detail discussion about the differences between bagging (bootstrapping), boosting, and random forests.
 
