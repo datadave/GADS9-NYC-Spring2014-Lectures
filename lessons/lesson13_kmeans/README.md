@@ -38,6 +38,7 @@ _located in the repo or in html here:_
 * Rough illustration of k-means with country data
  
  
+[How to use k-means on OCR to get $400 million from Google](http://nbviewer.ipython.org/github/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson13_kmeans/GA13_OCR_Demo.ipynb)
  
 
 
