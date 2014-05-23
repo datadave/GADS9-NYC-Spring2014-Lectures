@@ -8,11 +8,13 @@ Written for GADS9-NYC-Spring2014
 # Import pandas and a helper routine to split data into training and test sets
 import pandas as pd
 from sklearn.cross_validation import train_test_split
+from sklearn import metrics 
 
 # Import our models
 from sklearn.linear_model import LogisticRegression
-from sklearn.naive_bayes import GaussianNB, BernoulliNB
+from sklearn.naive_bayes import GaussianNB, BernoulliNB, MultinomialNB
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
 
 def runClassifier(clf,title,xtrain,ytrain,xtest,ytest):
     """
@@ -33,14 +35,17 @@ def runClassifier(clf,title,xtrain,ytrain,xtest,ytest):
 
     # use the model to predict labels for the test set
     # note: this step is redundant if you just want the score
-    #predictions = clf.predict(xtest)
+    # but we will use it for AUC
+    predictions = clf.predict(xtest)
+    fpr, tpr, thresholds = metrics.roc_curve(ytest, predictions)
+    auc = metrics.auc(fpr, tpr)
 
     # the score function will run the predict method and then calculate
     # the accuracy based on the labels it calculates and the actual labels
     score = clf.score(xtest, ytest)
 
     # print the accuracy of our model on the test data
-    print "%s Accuracy: %0.2f%%" % (title,(100.0 * score))
+    print "%s Accuracy:\t%0.2f%%\tAUC: %0.2f" % (title,(100.0 * score),auc)
 
     # return the predictions in case the caller is interested
     #return predictions
@@ -73,9 +78,12 @@ def main(filename):
     xtrain, xtest, ytrain, ytest = train_test_split(X,Y)
 
     classifiers = {
+        # The sklearn MultinomialNB implementation requires X values to be > 0
+        #'Multinomial Naive Bayes':MultinomialNB(),
         'Bernoulli Naive Bayes':BernoulliNB(),
         'Gaussian Naive Bayes':GaussianNB(),
         'Logistic Regression':LogisticRegression(),
+        'Random Forest':RandomForestClassifier(n_estimators=10,random_state=1234),
         'K-Nearest Neighbors':KNeighborsClassifier(n_neighbors=3,weights='uniform')}
 
     for title, clf in classifiers.items():
