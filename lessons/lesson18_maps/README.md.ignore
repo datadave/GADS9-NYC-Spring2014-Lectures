@@ -1,0 +1,119 @@
+Maps
+====
+
+
+
+Lecture Outline
+-------
+- Mapping Theory, History and Overview
+- Python Mapping
+- Lab
+
+Topics:
+-------
+#### GeoJSON: specific use of JSON for encoding maps to web apps
+- Feature: Unit shape -- i.e. boundaries of a state
+
+Note that:
+* GeoJSON always has lon/lat (not lat/lon as we're used to)
+* Collection is called a "FeatureCollection" with features having ID, properties and, most importantly, geometry, in the format below:
+
+Sample: 
+```
+{
+  "type": "FeatureCollection",
+  "features": [
+     {
+       "type": "Feature",
+       "id": "01",
+       "properties": { "name": "Alabama" },
+       "geometry": {
+         "type": "Polygon",
+         "coordinates": [[[-87.359296,35.00118],
+           [-85.606675,34.984749],[-85.431413,34.124869],
+           [-85.184951,32.859696],[-85.069935,32.580372],
+           [-84.960397,32.421541],[-85.004212,32.322956],
+           [-84.889196,32.262709],[-85.058981,32.13674] …
+          ]]
+      }
+    },
+    {
+         "type": "Feature",
+         "id": "02",
+         "properties": { "name": "Alaska" },
+         "geometry": {
+           "type": "MultiPolygon",
+           "coordinates": [[[[-131.602021,55.117982],
+             [-131.569159,55.28229],[-131.355558,55.183705],
+             [-131.38842,55.01392],[-131.645836,55.035827],
+             [-131.602021,55.117982]]],[[[-131.832052,55.42469],
+             [-131.645836,55.304197],[-131.749898,55.128935],
+             [-131.832052,55.189182], …
+            ]]]
+          }
+      }
+      
+```
+
+
+- Shape Files ([shape files tutorial](http://www.geophysique.be/2013/02/12/matplotlib-basemap-tutorial-10-shapefiles-unleached-continued/)).
+	* Detail from 1:10m (i.e. US State Outlines), 1:50m (Europe), 1:110m (Whole World)
+	* US Census Shapefiles from 1:500k, 1:5m, 1:20m
+	* gadm.org
+	* naturalearthdata.com
+	* Example of line geometry simplification: http://bost.ocks.org/mike/simplify/
+- ogr2ogr: GDAL and GEOS based software to simply shapefiles to GeoJSON
+- [mapshaper](mapshaper.org) is an amzing tool to simply, convert -- and visualize -- shape files or any geometry to Geo/Top/Shape format.
+
+* When you can't obtain pre-existing GeoJSON for an area of interest, then you need to a) find the shapefile and b) convert it to GeoJSON
+
+- Projection: Specific math/compromise used to convert 3D reality to a 2D map. i.e Mercator
+
+### Cool Examples
+
+### Cool Tools
+* Recommended online geocoder: http://www.gpsvisualizer.com/geocoder/
+
+### The Chloropleth
+
+- Chlorpleth Caution: Because Chloropleths use area to encode values, large areas with low density (such as the state of Nevada) might be overrepresented visually
+
+
+
+
+
+	
+
+
+
+
+
+
+
+### Resources
+
+
+
+| Title | Author | Type | Length | Difficulty | Description | Rating (1 to 4 Stars)
+| ----- | ----- | ---- | ----- | ------ | --- | --- | --- |
+| [Geographical Plotting with Python](https://www.youtube.com/watch?v=Xr6sG1QnMbw) | | YouTube | 6 minutes | | Multiple 5 to 10 minute videos |
+| [Up and Down the Python Data and Web Visualization Stack](http://nbviewer.ipython.org/gist/wrobstory/1eb8cb704a52d18b9ee8/Up%20and%20Down%20PyData%202014.ipynb) | wrobstory | pynb | | Intermediate | Super awesome example of all kinds of good stuff like bokeh, ggplot, vincent and more culminating in a chloropleth |
+| [Flowing Data Open Source Mapping](http://flowingdata.com/2009/11/12/how-to-make-a-us-county-thematic-map-using-free-tools/#more-3581)
+| [Geomapping Chapter from Interactive Data Visualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345/ch12.html)
+| TileMill and MapBox
+| [Using Stamen and Mapbox Tile Sets as Base Maps](http://blogs.esri.com/esri/arcgis/2013/04/01/using-stamen-and-mapbox-tilesets-as-basemaps-in-arcgis-com/) | | | || -- with folio use the following example:` tiles=('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg')`
+| BrewerColor Classes [named](http://www.soi.city.ac.uk/~jad7/kml/infoVis/colorBrewer-110808.html)
+| [So you'd like to make a map in python](http://sensitivecities.com/so-youd-like-to-make-a-map-using-python-EN.html#.U5IID2RdVZ8) | | Tutorial
+| [Intro to GeoPandas](http://nbviewer.ipython.org/github/jaidevd/scipy_pandas_tutorial/blob/master/05_geopandas_demo.ipynb) | | Tutorial | | |A very basic (in a good way) geopandas tutorial
+| http://flowingdata.com/2009/11/12/how-to-make-a-us-county-thematic-map-using-free-tools/#more-3581   | | Tutorial
+| Zain Memon -- Maps with open tools. Youtube 30 minute video. Pycon 2012 | | Tutorial
+| Python Map in less than 10 lines of code (http://wrobstory.github.io/2013/04/python-maps-choropleth.html) | | Tutorial
+| [Mapping Applications](http://www.visualisingdata.com/index.php/2013/09/essential-resources-mapping-applications-frameworks-and-libraries/) ||||| Great list of GUI map frameworks and apps |
+| [Python for GeoSciences](http://earthpy.org/category/introduction-to-python.html) |Nikolday Koldunov | Multiple ipynb || Beginner |Great intro to basemap mapping and concepts | +++ |
+| [Basemap Examples](http://matplotlib.org/basemap/users/examples.html)
+| DataScienceToolkit ||||| Great geolocation api and downloadable server
+
+
+
+
+
