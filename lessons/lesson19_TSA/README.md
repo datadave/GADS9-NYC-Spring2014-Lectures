@@ -1,7 +1,9 @@
 #Time Series Analysis
 
 
-See the [Notebook]() for full details.
+See the [rendered notebook](http://nbviewer.ipython.org/urls/raw.github.com/datadave/GADS9-NYC-Spring2014-Lectures/master/lessons/lesson19_TSA/Introduction_To_Time_Series_Using_Python.ipynb) for full details.
+
+Or, download and run [the notebook](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson19_TSA/Introduction_To_Time_Series_Using_Python.ipynb)
 
 Previous GA Course Lecture notes [here](timeseries_gaslides.pdf)
 
