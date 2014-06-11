@@ -5,6 +5,29 @@ See the [rendered notebook](http://nbviewer.ipython.org/urls/raw.github.com/data
 
 Or, download and run [the notebook](https://github.com/datadave/GADS9-NYC-Spring2014-Lectures/blob/master/lessons/lesson19_TSA/Introduction_To_Time_Series_Using_Python.ipynb)
 
+#### Lesson Outline:
+
+* Foundational concepts in Time Series Analysis
+  * Time Series Data
+  * Objectives of TSA
+  * IID Violations
+  * Stationarity
+  * Autocovariance
+  * Autocorrelation
+  * Random Walks
+* Leveraging Pandas for Time Series
+  * Ways Pandas Handles Data
+  * Importing financial data
+  * Rolling Mean and Rolling STD
+* Modeling and Predicting Time Series
+  * Considerations
+  * Viewing and Plotting a Data Series
+  * Autocorrelations
+  * ARMA Models
+* Further Resources
+
+
+
 Previous GA Course Lecture notes [here](timeseries_gaslides.pdf)
 
 Additional recommended resources:
