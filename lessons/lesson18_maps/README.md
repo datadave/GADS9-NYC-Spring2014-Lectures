@@ -26,6 +26,7 @@ Additional recommended resources are featured below.
 | [Python for GeoSciences](http://earthpy.org/category/introduction-to-python.html) |Nikolday Koldunov | Multiple ipynb || Beginner |Great intro to basemap mapping and concepts | +++ |
 | [Basemap Examples](http://matplotlib.org/basemap/users/examples.html) |||||Ye Olde MatPlotLib -- worth checking these out -- super powerful. | +++
 | DataScienceToolkit ||||| Great geolocation api and downloadable server | +++
+| [Essential Python Geospatial Libraries](http://spatialdemography.org/essential-python-geospatial-libraries/)
 
 
 
