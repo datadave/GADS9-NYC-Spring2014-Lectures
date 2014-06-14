@@ -1,7 +1,7 @@
 Maps
 ====
 
-This lesson features an overivew (mapschool.pd) and code examples (mapping101.ipynb) of basic geomapping with Python.
+This lesson features an overview (mapschool.md) and code examples (mapping101.ipynb) of basic geomapping with Python.
 
 Additional recommended resources are featured below.
 
