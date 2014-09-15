@@ -10,7 +10,7 @@ The final project should include at least the following components:
 
  * Gather, preprocess and visualize one or more datasets using the ACES framework. What can you learn from a high­ level analysis?
  * Apply appropriate techniques: regression/classification algorithms, evaluation, cross-­validation, etc., and report your results.
- * Consider how you could implement what you’ve done in a production system. Where would the data live? How would it represented? How would end ­users access it? What parts would be streaming vs. batch?
+ * Consider how you could implement what you’ve done in a production system. Where would the data live? How would it represented? How would end ­users access it? What parts would be streami vs. batch?
 
 Optionally, it would be exciting to actually implement the system based on your work, and to the degree this is possible within the time frame of the course, it is certainly encouraged!
 
